@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wraper">
+      <div class="container">
+        <div class="row">
+          <div class="col">Bucharest</div>
+          <div class="col">Chisinau</div>
+          <div class="col">Paris</div>
+          <div class="col">New York</div>
+          <div class="col">London</div>
+        </div>
+      </div>
+
+      <br />
+      <div class="container-search">
+        <div class="row">
+          <div class="col">
+            <form class="search-form" id="search-form">
+              <div class="form-outline">
+                <input
+                  type="search"
+                  id="submit-form"
+                  class="form-control"
+                  placeholder="Enter a city"
+                  aria-label="Search"
+                  autocomplete="off"
+                  autofocus="on"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="col-2">
+            <button
+              id="search-button"
+              type="button"
+              class="btn btn-primary"
+              value="search"
+            >
+              Search
+            </button>
+          </div>
+          <div class="col-2">
+            <button
+              class="btn btn-success"
+              id="current-location-button"
+              value="search"
+            >
+              Current
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="curent-city">
+        <div class="row">
+          <div class="col">
+            <h1 id="city"></h1>
+            <p id="current-date">Friday, 12.09 <br /></p>
+            <ul>
+              <li>
+                Humidity
+                <span class="figures" id="humidity"> <strong></strong> </span>%
+              </li>
+
+              <li>
+                Wind:
+                <span class="figures" id="wind"> <strong> </strong> </span>
+                km/h
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <span class="temperature" id="temperature"></span
+            ><span class="units"> <strong> °C </strong></span>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-3"><span class="weekday"> Monday</span></div>
+        <div class="col">🌦️</div>
+        <div class="col"><span class="day"> 17°C </span></div>
+        <div class="col"><span class="night"> 7°C </span></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-3"><span class="weekday"> Tuesday </span></div>
+        <div class="col">⛅</div>
+        <div class="col"><span class="day"> 10°C </span></div>
+        <div class="col"><span class="night"> 3°C </span></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-3"><span class="weekday"> Wednesday </span></div>
+        <div class="col">☁️</div>
+        <div class="col"><span class="day"> 18°C </span></div>
+        <div class="col"><span class="night"> 1°C </span></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-3"><span class="weekday"> Thursday </span></div>
+        <div class="col">🌥️</div>
+        <div class="col"><span class="day"> 12°C </span></div>
+        <div class="col"><span class="night"> 5°C </span></div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-3"><span class="weekday"> Friday </span></div>
+        <div class="col">⛈️</div>
+        <div class="col"><span class="day"> 9°C </span></div>
+        <div class="col"><span class="night"> 2°C </span></div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
