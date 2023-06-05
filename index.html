@@ -23,8 +23,8 @@
   </head>
 
   <body>
-    <div class="wraper">
-      <div class="container">
+    <div class="container">
+      <div class="wraper">
         <div class="row">
           <div class="col">Bucharest</div>
           <div class="col">Chisinau</div>
@@ -32,111 +32,116 @@
           <div class="col">New York</div>
           <div class="col">London</div>
         </div>
-      </div>
+        <br />
+        <div class="container-search">
+          <div class="row">
+            <div class="col">
+              <form class="search-form" id="search-form">
+                <div class="form-outline">
+                  <input
+                    type="search"
+                    id="submit-form"
+                    class="form-control"
+                    placeholder="Enter a city"
+                    aria-label="Search"
+                    autocomplete="off"
+                    autofocus="on"
+                  />
+                </div>
+              </form>
+            </div>
 
-      <br />
-      <div class="container-search">
+            <div class="col-2">
+              <button
+                id="search-button"
+                type="button"
+                class="btn btn-primary"
+                value="search"
+              >
+                Search
+              </button>
+            </div>
+            <div class="col-2">
+              <button
+                class="btn btn-success"
+                id="current-location-button"
+                value="search"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="curent-city">
+          <div class="row">
+            <div class="col">
+              <h1 id="city"></h1>
+              <p id="current-date">Friday, 12.09 <br /></p>
+              <ul>
+                <li>
+                  Humidity
+                  <span class="figures" id="humidity"> <strong></strong> </span
+                  >%
+                </li>
+
+                <li>
+                  Wind:
+                  <span class="figures" id="wind"> <strong> </strong> </span>
+                  km/h
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <span class="temperature" id="temperature"></span
+              ><span class="units"> <strong> °C </strong></span>
+            </div>
+          </div>
+        </div>
+        <br />
         <div class="row">
-          <div class="col">
-            <form class="search-form" id="search-form">
-              <div class="form-outline">
-                <input
-                  type="search"
-                  id="submit-form"
-                  class="form-control"
-                  placeholder="Enter a city"
-                  aria-label="Search"
-                  autocomplete="off"
-                  autofocus="on"
-                />
-              </div>
-            </form>
-          </div>
-
-          <div class="col-2">
-            <button
-              id="search-button"
-              type="button"
-              class="btn btn-primary"
-              value="search"
-            >
-              Search
-            </button>
-          </div>
-          <div class="col-2">
-            <button
-              class="btn btn-success"
-              id="current-location-button"
-              value="search"
-            >
-              Current
-            </button>
-          </div>
+          <div class="col-3"><span class="weekday"> Monday</span></div>
+          <div class="col">🌦️</div>
+          <div class="col"><span class="day"> 17°C </span></div>
+          <div class="col"><span class="night"> 7°C </span></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-3"><span class="weekday"> Tuesday </span></div>
+          <div class="col">⛅</div>
+          <div class="col"><span class="day"> 10°C </span></div>
+          <div class="col"><span class="night"> 3°C </span></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-3"><span class="weekday"> Wednesday </span></div>
+          <div class="col">☁️</div>
+          <div class="col"><span class="day"> 18°C </span></div>
+          <div class="col"><span class="night"> 1°C </span></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-3"><span class="weekday"> Thursday </span></div>
+          <div class="col">🌥️</div>
+          <div class="col"><span class="day"> 12°C </span></div>
+          <div class="col"><span class="night"> 5°C </span></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-3"><span class="weekday"> Friday </span></div>
+          <div class="col">⛈️</div>
+          <div class="col"><span class="day"> 9°C </span></div>
+          <div class="col"><span class="night"> 2°C </span></div>
         </div>
       </div>
 
-      <br />
-      <div class="curent-city">
-        <div class="row">
-          <div class="col">
-            <h1 id="city"></h1>
-            <p id="current-date">Friday, 12.09 <br /></p>
-            <ul>
-              <li>
-                Humidity
-                <span class="figures" id="humidity"> <strong></strong> </span>%
-              </li>
-
-              <li>
-                Wind:
-                <span class="figures" id="wind"> <strong> </strong> </span>
-                km/h
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <span class="temperature" id="temperature"></span
-            ><span class="units"> <strong> °C </strong></span>
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-3"><span class="weekday"> Monday</span></div>
-        <div class="col">🌦️</div>
-        <div class="col"><span class="day"> 17°C </span></div>
-        <div class="col"><span class="night"> 7°C </span></div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-3"><span class="weekday"> Tuesday </span></div>
-        <div class="col">⛅</div>
-        <div class="col"><span class="day"> 10°C </span></div>
-        <div class="col"><span class="night"> 3°C </span></div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-3"><span class="weekday"> Wednesday </span></div>
-        <div class="col">☁️</div>
-        <div class="col"><span class="day"> 18°C </span></div>
-        <div class="col"><span class="night"> 1°C </span></div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-3"><span class="weekday"> Thursday </span></div>
-        <div class="col">🌥️</div>
-        <div class="col"><span class="day"> 12°C </span></div>
-        <div class="col"><span class="night"> 5°C </span></div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-3"><span class="weekday"> Friday </span></div>
-        <div class="col">⛈️</div>
-        <div class="col"><span class="day"> 9°C </span></div>
-        <div class="col"><span class="night"> 2°C </span></div>
-      </div>
+      <small>
+        <a href="https://github.com/StardustSF/myapp" target="_blank">
+          Open-source code
+        </a>
+        by Teodora Ieșeanu
+      </small>
     </div>
-
     <script src="javascript.js"></script>
   </body>
 </html>
